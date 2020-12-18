@@ -16,6 +16,7 @@ module.exports = {
  */
 function execute(resultJson)
 {
+  // FIXME: Непонятно как ловить актуальный отклик - нет обратной связи нужно исправить.
   tool.fastlog('Открыли соединение.');
   tool.fastlog('Попытка обращения к драйверу пин-пада.');
   cmd.runSync('driver_acquring\\LoadParm.exe 47 2');
