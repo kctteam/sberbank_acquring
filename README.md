@@ -1,7 +1,9 @@
 sberbank_acquring
 
 @link https://github.com/kctrud/sberbank_acquring
+
 @author Gayduk Anton - antohag@yandex.ru
+
 @copyright KCT - mail@kctrud.ru
 
 Библиотека отвечающая за взаимодействие с пинпадом сбербанка
