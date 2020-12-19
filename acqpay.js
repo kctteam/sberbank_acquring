@@ -77,5 +77,5 @@ function execute(resultJson, sum)
 
 function callback(err) {
   if (err) throw err;
-  console.log('source.txt was copied to destination.txt');
+  //console.log('source.txt was copied to destination.txt');
 }
