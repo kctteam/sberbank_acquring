@@ -54,7 +54,7 @@ function execute(resultJson, sum)
       }
       if (result) {
           resultJson['message'] = 'Оплата прошла успешно';
-          resultJson['result'] = 'Accept';
+          resultJson['result'] = 'accept';
           resultJson['data'] = {'code':autorizationcode,'card':card,'result':result,'sum':sum/100};
       }
       // NOTE: Логируем чек
