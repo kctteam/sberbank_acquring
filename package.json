@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "node-cmd": "^4.0.0",
-    "utf8": "^3",
     "iconv-lite": "*",
+    "node-cmd": "^4.0.0",
+    "utf8": "^3"
   }
 }

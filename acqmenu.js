@@ -18,7 +18,7 @@ function execute(resultJson)
 {
   tool.fastlog('Открыли соединение.');
   tool.fastlog('Попытка обращения к драйверу пин-пада.');
-  cmd.runSync('driver_acquring\\LoadParm.exe 11');
+  cmd.runSync('driver_acquring_2024\\LoadParm.exe 11');
   tool.fastlog('Сеанс завершен.');
   tool.fastlog('Закрыли соединение.');
   resultJson['result'] = 'Menu';

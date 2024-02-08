@@ -19,7 +19,7 @@ function execute(resultJson)
   // FIXME: Непонятно как ловить актуальный отклик - нет обратной связи нужно исправить.
   tool.fastlog('Открыли соединение.');
   tool.fastlog('Попытка обращения к драйверу пин-пада.');
-  cmd.runSync('driver_acquring\\LoadParm.exe 7');
+  cmd.runSync('driver_acquring_2024\\LoadParm.exe 7');
   tool.fastlog('Сеанс завершен.');
   tool.fastlog('Закрыли соединение.');
   resultJson['result'] = 'Close';

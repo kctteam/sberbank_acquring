@@ -71,6 +71,19 @@ Access-Control-Max-Age: 43200
   res.end(JSON.stringify(resultJson));
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, () => {
+  console.log(`Server running at http://${getLocalIp()}:${port}`);
+  console.log(`Example http://${getLocalIp()}:${port}/ping`);
 });
+
+function getLocalIp() {
+  const os = require('os');
+
+  for(let addresses of Object.values(os.networkInterfaces())) {
+      for(let add of addresses) {
+          if(add.address.startsWith('192.168.')) {
+              return add.address;
+          }
+      }
+  }
+}

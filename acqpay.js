@@ -20,12 +20,12 @@ function execute(resultJson, sum)
   sum = sum*100;
   tool.fastlog('Открыли соединение.');
   tool.fastlog('Попытка обращения к драйверу пин-пада, сумма - ' + (sum / 100) + 'руб.');
-  cmd.runSync('driver_acquring\\LoadParm.exe 1 ' + sum);
+  cmd.runSync('driver_acquring_2024\\LoadParm.exe 1 ' + sum);
   tool.fastlog('Сеанс завершен.');
   tool.fastlog('Ищем результаты работы.');
 
   // NOTE: Работа с файлом результата
-  filename = 'driver_acquring/p';
+  filename = 'driver_acquring_2024/p';
   try {
     if (fs.existsSync(filename)) {
       // NOTE: Данные получены, рабираем
@@ -54,11 +54,11 @@ function execute(resultJson, sum)
       }
       if (result) {
           resultJson['message'] = 'Оплата прошла успешно';
-          resultJson['result'] = 'Accept';
+          resultJson['result'] = 'accept';
           resultJson['data'] = {'code':autorizationcode,'card':card,'result':result,'sum':sum/100};
       }
       // NOTE: Логируем чек
-      fs.copyFile('driver_acquring/p', 'result_p/p_'+new Date().getFullYear() +'.'+ (new Date().getMonth() + 1) +'.'+ new Date().getDate()+'_'+new Date().getHours() +'.'+ new Date().getMinutes() +'.'+ new Date().getSeconds(), callback);
+      fs.copyFile('driver_acquring_2024/p', 'result_p/p_'+new Date().getFullYear() +'.'+ (new Date().getMonth() + 1) +'.'+ new Date().getDate()+'_'+new Date().getHours() +'.'+ new Date().getMinutes() +'.'+ new Date().getSeconds(), callback);
     }
     else {
       // NOTE: Все остальные пути отсекаем
