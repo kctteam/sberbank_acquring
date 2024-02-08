@@ -16,4 +16,9 @@ sberbank_acquring
 /menu - Вызов меню UPOS
 
 Формат ответа: application/json
+```
 {"statusCode":int,"error":null/string,"result":null/string,"message":null/string,"data":array}
+```
+
+Указание COM Порта устройства: 
+driver_acquring_2024\pinpad.ini -> ComPort={port}
