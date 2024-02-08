@@ -1,8 +1,8 @@
 sberbank_acquring
 
-@link https://github.com/kctrud/sberbank_acquring
+@link https://github.com/kctteam/sberbank_acquring
 
-@copyright KCT - https://kctrud.ru mail@kctrud.ru
+@copyright KCT - https://kct.team mail@kct.team
 
 @author Gayduk Anton - antohag@yandex.ru
 
